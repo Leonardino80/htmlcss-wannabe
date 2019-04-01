@@ -1,3 +1,9 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin:0;
+}
+
 .row {
   width: 992px;
   margin-left: auto;
@@ -64,4 +70,44 @@ img{
 
 .clear {
   clear:both;
+}
+
+ @media screen and (max-width:768px){
+
+.row {
+width: 80%;
+padding: 10px;
+
+  }
+#lezioni, #steps {
+  margin: 20px;
+}
+
+h1, h3 {
+  margin: 20px 0px;
+  width: 100%;
+}
+
+img {
+width: 100%;
+height: auto;
+padding-bottom: 20px;
+padding-top: 10px;
+}
+
+
+#lezioni .row > .right, #lezioni .row > .left, #steps .row > .right, #steps .row > .left, #steps .row > .central{
+width: 100%;
+}
+
+hr {
+  display: none;
+}
+
+#why .row .first{
+  display: none;
+}
+
+#why .row .first img{
+  display: contents;
 }
